@@ -1,0 +1,10 @@
+{
+  "site": "ZYQ / MARKETS",
+  "session_date": null,
+  "generated_at_utc": null,
+  "source": "Yahoo Finance chart data (unofficial; delayed data may apply)",
+  "items": [],
+  "warnings": [
+    "Run the GitHub Action to populate market data."
+  ]
+}
