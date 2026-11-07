@@ -1,0 +1,34 @@
+name: Daily market refresh
+on:
+  workflow_dispatch:
+  schedule:
+    # 22:30 UTC weekdays: after the US cash-market close in both DST and standard time.
+    - cron: "30 22 * * 1-5"
+permissions:
+  contents: write
+concurrency:
+  group: daily-market-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch completed market closes
+        run: python scripts/fetch_market.py
+      - name: Commit generated data and archive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data markets
+          if git diff --cached --quiet; then
+            echo "No market data changes."
+          else
+            git commit -m "Update daily market edition"
+            git push
+          fi
