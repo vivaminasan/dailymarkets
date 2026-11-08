@@ -14,7 +14,7 @@ The starter uses Yahoo Finance's unofficial chart endpoint without an API key. I
 The script selects the latest candle dated before the current New York date to avoid using an in-progress daily candle. On holidays, the latest available session may be earlier than the current weekday. It refuses to publish if fewer than five instruments are fetched, preserving the last good data.
 
 ## Deploy
-1. Create a GitHub repository (e.g. `zyq-markets`) and push the contents of this folder to its default branch.
+1. Create a GitHub repository (e.g. `daily-markets`) and push the contents of this folder to its default branch.
 2. In Cloudflare Dashboard: **Workers & Pages → Create → Pages → Connect to Git**. Select the repository.
 3. Framework preset: **None**. Build command: leave blank. Build output directory: `/` (repository root).
 4. Deploy, then add your custom domain such as `www.yourdomain.com` in Pages and follow its DNS instructions.
