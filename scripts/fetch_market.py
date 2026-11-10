@@ -27,12 +27,14 @@ def fetch(symbol):
   except Exception as e: err=e; time.sleep(2**attempt)
  raise RuntimeError(f"{symbol}: {err}")
 def main():
- now=dt.datetime.now(dt.timezone.utc); today=now.astimezone(ZoneInfo("America/New_York")).date()
+ now=dt.datetime.now(dt.timezone.utc)
+ et=now.astimezone(ZoneInfo("America/New_York")); today=et.date()
+ cutoff=today if (et.hour,et.minute)>=(16,30) else today-dt.timedelta(days=1)
  items=[]; dates=[]; errors=[]
  for key,name,ticker,kind,unit in ASSETS:
   try:
    pts,currency=fetch(ticker)
-   done=[p for p in pts if nydate(p[0])<today]
+   done=[p for p in pts if nydate(p[0])<=cutoff]
    if len(done)<2: done=pts[-2:]
    ts,val=done[-1]; prev=done[-2][1]
    change=(val/prev-1)*100 if prev else None
