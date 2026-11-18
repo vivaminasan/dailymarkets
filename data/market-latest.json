@@ -1,17 +1,16 @@
 {
   "site": "ZYQ / MARKETS",
-  "session_date": "2026-11-16",
-  "generated_at_utc": "2026-11-17 04:41 UTC",
+  "session_date": "2026-11-17",
+  "generated_at_utc": "2026-11-18 03:46 UTC",
   "source": "Yahoo Finance chart data (unofficial; delayed data may apply)",
   "items": [
     {
       "key": "SPX",
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": 7416.5898,
-      "change_pct": -1.9186,
+      "value": 7340.5298,
+      "change_pct": -1.0255,
       "history": [
-        7580.0698,
         7541.3999,
         7568.9199,
         7688.6201,
@@ -22,7 +21,8 @@
         7619.3799,
         7592.3999,
         7561.6699,
-        7416.5898
+        7416.5898,
+        7340.5298
       ],
       "unit": "",
       "kind": "index",
@@ -32,10 +32,9 @@
       "key": "NASDAQ",
       "name": "NASDAQ Composite",
       "symbol": "^IXIC",
-      "value": 24509.7578,
-      "change_pct": -2.4925,
+      "value": 24328.3828,
+      "change_pct": -0.74,
       "history": [
-        25437.0,
         25164.3105,
         25372.0098,
         25736.5098,
@@ -46,7 +45,8 @@
         25466.1895,
         25366.0898,
         25136.2695,
-        24509.7578
+        24509.7598,
+        24328.3828
       ],
       "unit": "",
       "kind": "index",
@@ -56,10 +56,9 @@
       "key": "DOW",
       "name": "Dow Jones",
       "symbol": "^DJI",
-      "value": 51608.1992,
-      "change_pct": -1.4124,
+      "value": 50759.4219,
+      "change_pct": -1.6446,
       "history": [
-        51770.3086,
         51983.9805,
         51786.7188,
         53356.1211,
@@ -70,7 +69,8 @@
         52486.4883,
         52297.0898,
         52347.5508,
-        51608.1992
+        51608.1719,
+        50759.4219
       ],
       "unit": "",
       "kind": "index",
@@ -80,10 +80,9 @@
       "key": "RUT",
       "name": "Russell 2000",
       "symbol": "^RUT",
-      "value": 2742.9412,
-      "change_pct": -1.704,
+      "value": 2701.8706,
+      "change_pct": -1.4973,
       "history": [
-        2811.8401,
         2805.8799,
         2812.45,
         2856.95,
@@ -94,7 +93,8 @@
         2846.26,
         2799.0601,
         2790.49,
-        2742.9412
+        2742.9399,
+        2701.8706
       ],
       "unit": "",
       "kind": "index",
@@ -104,10 +104,9 @@
       "key": "VIX",
       "name": "CBOE VIX",
       "symbol": "^VIX",
-      "value": 22.91,
-      "change_pct": 18.7047,
+      "value": 25.46,
+      "change_pct": 11.1305,
       "history": [
-        19.42,
         21.15,
         20.83,
         16.61,
@@ -118,7 +117,8 @@
         17.49,
         18.7,
         19.3,
-        22.91
+        22.91,
+        25.46
       ],
       "unit": "",
       "kind": "index",
@@ -128,10 +128,9 @@
       "key": "GOLD",
       "name": "Gold futures",
       "symbol": "GC=F",
-      "value": 3866.5,
-      "change_pct": 0.3504,
+      "value": 3795.2,
+      "change_pct": -1.7856,
       "history": [
-        3969.6001,
         3940.3999,
         4073.0,
         4113.5,
@@ -142,7 +141,8 @@
         3885.3,
         3886.3,
         3853.0,
-        3866.5
+        3864.2,
+        3795.2
       ],
       "unit": "USD/oz",
       "kind": "commodity",
@@ -152,10 +152,9 @@
       "key": "DXY",
       "name": "US Dollar Index",
       "symbol": "DX-Y.NYB",
-      "value": 103.495,
-      "change_pct": -0.0531,
+      "value": 103.609,
+      "change_pct": 0.115,
       "history": [
-        101.75,
         101.87,
         101.51,
         101.55,
@@ -166,7 +165,8 @@
         103.17,
         103.41,
         103.55,
-        103.495
+        103.49,
+        103.609
       ],
       "unit": "",
       "kind": "index",
@@ -176,10 +176,9 @@
       "key": "US10Y",
       "name": "US 10Y Treasury yield",
       "symbol": "^TNX",
-      "value": 5.121,
-      "change_pct": -0.6403,
+      "value": 5.103,
+      "change_pct": -0.3515,
       "history": [
-        4.929,
         4.894,
         4.952,
         4.894,
@@ -190,7 +189,8 @@
         4.998,
         5.103,
         5.154,
-        5.121
+        5.121,
+        5.103
       ],
       "unit": "%",
       "kind": "yield",
